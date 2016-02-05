@@ -1,0 +1,9 @@
+﻿@model IEnumerable<CheckingASPNET.Models.Message>
+
+@foreach (var msg in Model)
+{
+    <div class="message">
+        <div>@msg.UserName</div>
+        <div>@msg.message</div>
+    </div>
+}
