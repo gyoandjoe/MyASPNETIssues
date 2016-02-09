@@ -1,0 +1,55 @@
+﻿@model IEnumerable<Project>
+
+
+<table class="table table-hover">
+    <thead>
+        <tr>
+            <th>Nombre de proyecto</th>
+            <th>Descripción</th>
+            <th>Fecha de creación</th>
+        </tr>
+    </thead>
+    <tbody>
+        @{
+            foreach (var project in Model)
+            {
+            <tr>
+                <td>@project.NombreProject</td>
+                <td>@project.NombreProject</td>
+                <td>@project.Descripcion</td>
+                <td>@project.FechaCreacion</td>
+                <td>
+                    <input class="idProject" type="hidden" value="@project.IdProject" />
+                    <button type="button" class="btn btn-default openEditor" data-toggle="modal" data-target="#Editor">Editar</button>
+                </td>
+            </tr>
+            }
+        }
+    </tbody>
+</table>
+
+<div class="modal fade" id="Editor" role="dialog">
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Modal Header</h4>
+            </div>
+            <div class="modal-body">
+                <p>Some text in the modal.</p>
+                @{Html.RenderPartial("_FormProject", new Project());
+                }
+
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+

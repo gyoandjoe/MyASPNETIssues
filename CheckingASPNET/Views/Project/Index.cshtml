@@ -1,0 +1,44 @@
+﻿
+@{
+    ViewBag.Title = "Projects";
+}
+
+<div class="row">
+    <div class="col-lg-12">
+        @{
+            Html.RenderAction("GetTableProjects");
+        }
+    </div>
+</div>
+
+@section scripts {
+    <script>
+        function GetProject() {
+         
+        }
+
+        $(".openEditor").click(function () {
+            $.ajax({
+                url: '@Url.Action("FindProjectById", "Project")',
+                type: 'get',
+                cache: false,
+                async: true,
+                data: { "id": $(this).siblings('.idProject').val() },
+                success: function (result) {
+                    $(".formNombreProject").val(result['NombreProject'])
+                    
+                    alert(result['IdProject'])
+                    //$('#chatviewer').html(result);
+                }
+            });
+            //alert("Handler for .click() called.");
+
+        });
+
+
+        $(document).ready(function () {
+            //alert ("OK")
+            GetProject()
+        });
+    </script>
+}

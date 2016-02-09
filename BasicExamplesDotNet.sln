@@ -9,6 +9,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ASPNetExamples", "CheckingA
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApiExamples", "WebApiExamples\WebApiExamples.csproj", "{613BB106-CFB4-4611-A04B-F3046C03DD75}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WcfServiceTest", "WcfServiceTest\WcfServiceTest.csproj", "{909D2DD7-E003-48F2-A697-4773693BC915}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodilityTest", "CodilityTest\CodilityTest.csproj", "{66F7C424-9F24-402B-A58F-EFB53738AFE5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +31,14 @@ Global
 		{613BB106-CFB4-4611-A04B-F3046C03DD75}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{613BB106-CFB4-4611-A04B-F3046C03DD75}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{613BB106-CFB4-4611-A04B-F3046C03DD75}.Release|Any CPU.Build.0 = Release|Any CPU
+		{909D2DD7-E003-48F2-A697-4773693BC915}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{909D2DD7-E003-48F2-A697-4773693BC915}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{909D2DD7-E003-48F2-A697-4773693BC915}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{909D2DD7-E003-48F2-A697-4773693BC915}.Release|Any CPU.Build.0 = Release|Any CPU
+		{66F7C424-9F24-402B-A58F-EFB53738AFE5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{66F7C424-9F24-402B-A58F-EFB53738AFE5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{66F7C424-9F24-402B-A58F-EFB53738AFE5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{66F7C424-9F24-402B-A58F-EFB53738AFE5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
