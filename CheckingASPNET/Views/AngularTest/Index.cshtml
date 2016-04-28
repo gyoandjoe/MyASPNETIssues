@@ -1,0 +1,57 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<div ng-app="PersonitaAPP" ng-controller="PersonasCTRL">
+    <div style="background-color: aquamarine;">
+        Name: <input ng-model="firstname">
+        <h1>{{firstname}}</h1>
+    </div>
+    <br />
+
+    <div ng-repeat="persona in personas">
+        <p>{{persona.Apellido}} </p>
+        <p>{{persona.Email}} </p>
+    </div>
+</div>
+
+<h2>Index</h2>
+
+
+@section scripts{
+    <script>
+    var app = angular.module('PersonitaAPP', []);
+
+    app.service("PersonaProviderService", function ($http) {
+        //get All Eployee
+        this.geAllPersons = function () {
+            return $http.get("@Url.Action("ObtenerTodasLasPersonas", "AngularTest", new {}, "http")");
+        };
+    });
+
+
+
+    app.controller('PersonasCTRL', function ($scope, PersonaProviderService) {
+        var getData = PersonaProviderService.geAllPersons();
+        $scope.firstname = "FCC";
+        getData.then(function (emp) {
+            $scope.personas = emp.data;
+
+        }, function () {
+            alert('Error al obtener las Personas :(');
+
+        });
+
+
+
+    });
+
+
+
+</script>
+    
+    
+    }
+
+
