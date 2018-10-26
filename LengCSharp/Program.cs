@@ -15,7 +15,7 @@ namespace LangCSharp
             //elef.Caminar();
             Animal elef2 = new Elefante();
             //elef2.Caminar();
-
+            Animal animal = elef2;
 
             //var p = new Planeta();
             //Error
@@ -57,7 +57,7 @@ namespace LangCSharp
         }
 
         /// <summary>
-        /// en una iteracion como un foreach no ontiene toda la lista completa sino que uno por uno segun se vaya necesitando
+        /// en una iteracion como un foreach no obtiene toda la lista completa sino que uno por uno segun se vaya necesitando
         /// </summary>
         /// <param name="inicio"></param>
         /// <param name="fin"></param>

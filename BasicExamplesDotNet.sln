@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.24720.0
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2035
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LangCSharp", "LengCSharp\LangCSharp.csproj", "{7BA30903-9DD5-48EC-9AB0-04BE15288D51}"
 EndProject
@@ -12,6 +12,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WcfServiceTest", "WcfServiceTest\WcfServiceTest.csproj", "{909D2DD7-E003-48F2-A697-4773693BC915}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodilityTest", "CodilityTest\CodilityTest.csproj", "{66F7C424-9F24-402B-A58F-EFB53738AFE5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebNetCore", "WebNetCore\WebNetCore.csproj", "{FBE5F0FE-1748-4F23-8F77-15285FDF3F80}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,8 +41,15 @@ Global
 		{66F7C424-9F24-402B-A58F-EFB53738AFE5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{66F7C424-9F24-402B-A58F-EFB53738AFE5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{66F7C424-9F24-402B-A58F-EFB53738AFE5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FBE5F0FE-1748-4F23-8F77-15285FDF3F80}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FBE5F0FE-1748-4F23-8F77-15285FDF3F80}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FBE5F0FE-1748-4F23-8F77-15285FDF3F80}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FBE5F0FE-1748-4F23-8F77-15285FDF3F80}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {25169B48-3EB0-468F-AFF3-5E538E566D25}
 	EndGlobalSection
 EndGlobal
